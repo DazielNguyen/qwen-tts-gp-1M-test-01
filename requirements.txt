@@ -7,3 +7,10 @@ datasets
 transformers
 torchcodec 
 soundfile
+tiktoken
+librosa
+sox
+onnxruntime
+flash-attn
+tensorboard
+# apt-get update && apt-get install -y sox libsox-fmt-all
