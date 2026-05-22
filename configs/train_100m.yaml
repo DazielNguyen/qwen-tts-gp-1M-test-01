@@ -1,0 +1,17 @@
+model:
+  vocab_size: 1300
+  d_model: 768          # 100M Parameters Architecture
+  nhead: 12
+  num_layers: 12
+  dim_feedforward: 3072
+  max_seq_len: 2048
+
+training:
+  batch_size: 16          # Tùy VRAM, nếu báo OOM thì giảm xuống 8, dư thì tăng 32
+  grad_accum_steps: 4     # Effective batch = 16 * 4 = 64
+  epochs: 50              # Huấn luyện thực tế
+  learning_rate: 0.0006   # LR cao kết hợp Scheduler
+  weight_decay: 0.1
+  save_every: 1           # Lưu sau mỗi Epoch
+  checkpoint_dir: "checkpoints/100m_server_run"
+  num_workers: 8          # Tận dụng chip Xeon Gold đa nhân

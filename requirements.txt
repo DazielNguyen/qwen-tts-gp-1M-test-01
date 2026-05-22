@@ -1,0 +1,9 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+pyyaml
+tqdm
+numpy
+datasets
+transformers
+torchcodec 
+soundfile
