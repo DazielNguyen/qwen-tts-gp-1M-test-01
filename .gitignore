@@ -1,0 +1,13 @@
+# Bỏ qua thư mục dữ liệu lớn
+data/
+
+# Bỏ qua file trọng số mô hình
+checkpoints/
+
+# Bỏ qua cache của Python
+__pycache__/
+*.pyc
+
+.venv/
+
+.DS_Store
